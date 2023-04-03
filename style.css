@@ -1,0 +1,143 @@
+/* General Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content Styles */
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.quiz-question:last-of-type {
+  margin-bottom: 0;
+}
+
+.quiz-question.active {
+  display: block;
+}
+
+.quiz-question p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.quiz-question input[type=radio],
+.quiz-question select,
+.quiz-question textarea {
+  margin-bottom: 10px;
+}
+
+.quiz-controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-controls button {
+  margin-right: 0;
+}
+
+/* Score Styles */
+
+.score-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.score-container.active {
+  display: block;
+}
+
+.score-container h2 {
+  margin-top: 0;
+}
+
+.score-container p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.score-container #message {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 130px;
+  }
+
+  .quiz-controls {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .quiz-controls button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
